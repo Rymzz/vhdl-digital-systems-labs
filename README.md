@@ -17,7 +17,6 @@ The goal of these labs was to practice designing, simulating, and testing digita
 
 | Folder | Description |
 |--------|-------------|
-| `lab00` | Introductory VHDL lab |
 | `lab01` | Basic digital logic design |
 | `lab02` | VHDL design and simulation practice |
 | `lab03` | Sequential logic practice |
