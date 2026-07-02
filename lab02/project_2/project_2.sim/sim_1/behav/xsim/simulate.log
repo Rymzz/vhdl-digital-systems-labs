@@ -1,0 +1,30 @@
+Time resolution is 1 ps
+Note: btns: 0000
+Time: 0 ps  Iteration: 0  Process: /test_bench/line__160  File: C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/feu_tb.vhd
+Note: btns: 0001
+Time: 32 ns  Iteration: 1  Process: /test_bench/line__160  File: C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/feu_tb.vhd
+Note: btns: 0000
+Time: 40 ns  Iteration: 1  Process: /test_bench/line__160  File: C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/feu_tb.vhd
+Note: btns: 0001
+Time: 64 ns  Iteration: 1  Process: /test_bench/line__160  File: C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/feu_tb.vhd
+Note: btns: 0000
+Time: 72 ns  Iteration: 1  Process: /test_bench/line__160  File: C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/feu_tb.vhd
+Note: btns: 0001
+Time: 152 ns  Iteration: 1  Process: /test_bench/line__160  File: C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/feu_tb.vhd
+Note: btns: 0000
+Time: 160 ns  Iteration: 1  Process: /test_bench/line__160  File: C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/feu_tb.vhd
+Note: btns: 0010
+Time: 168 ns  Iteration: 1  Process: /test_bench/line__160  File: C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/feu_tb.vhd
+Note: btns: 0000
+Time: 176 ns  Iteration: 1  Process: /test_bench/line__160  File: C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/feu_tb.vhd
+Note: btns: 0011
+Time: 248 ns  Iteration: 1  Process: /test_bench/line__160  File: C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/feu_tb.vhd
+Note: btns: 0000
+Time: 256 ns  Iteration: 1  Process: /test_bench/line__160  File: C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/feu_tb.vhd
+Note: btns: 0010
+Time: 264 ns  Iteration: 1  Process: /test_bench/line__160  File: C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/feu_tb.vhd
+Note: btns: 0000
+Time: 272 ns  Iteration: 1  Process: /test_bench/line__160  File: C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/feu_tb.vhd
+Failure: Fin de simulation - tous les tests passés
+Time: 288 ns  Iteration: 0  Process: /test_bench/line__59  File: C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/feu_tb.vhd
+$finish called at time : 288 ns : File "C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/feu_tb.vhd" Line 153

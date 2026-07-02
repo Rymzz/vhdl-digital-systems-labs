@@ -1,0 +1,21 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.919205",
+   "Default View_TopLeft":"-620,2",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 2 -x 420 -y 20 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 2 -x 420 -y 50 -defaultsOSRD
+preplace port port-id_clk -pg 1 -lvl 2 -x 420 -y 110 -defaultsOSRD
+preplace portBus from_zynq -pg 1 -lvl 2 -x 420 -y 80 -defaultsOSRD
+preplace portBus to_zynq -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 1 -x 210 -y 80 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 210 -y 240 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 210 -y 430 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 1 -x 210 -y 640 -defaultsOSRD
+levelinfo -pg 1 0 210 420
+pagesize -pg 1 -db -bbox -sgen -140 0 570 760
+"
+}
+

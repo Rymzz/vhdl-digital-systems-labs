@@ -1,0 +1,44 @@
+# Importer la classe MMIO qui permet d'interagir avec le FPGA en
+# passant par le bus GPIO relié au processeur ARM
+from pynq import MMIO
+# Instancier un objet de cette classe, en précisant son adresse,
+# définie dans le script TCL que vous avez sourcé, et sa range
+# d'adresses. Ici, on utilise uniquement le MMIO pour envoyer et
+# recevoir des valeurs sur 32 bits, donc le second paramètre a peu
+# d'importance mais doit être supérieur à 0xc
+demo = MMIO(0x41200000, 0x10)
+
+# On écrit la valeur `val` à l'adresse 0 du bus qui correspond au port
+# de lecture
+val = 0b101010101
+demo.write(0x0, val)
+
+#lit 32 bits à l’adresse offset 0x8
+val_out = demo.read(0x8)
+print("raw decimal :", val_out)
+print("binary      :", bin(val_out))
+
+j'ai du copier coller ca en tant que base?? sinon ca marchait pas:from pynq import MMIO
+
+demo = MMIO(0x41200000, 0x10)
+
+def test(val, label=""):
+    demo.write(0x0, val)
+    val_out = demo.read(0x8)
+    print("\n====", label, "====")
+    print("in  decimal :", val)
+    print("in  binary  :", bin(val))
+    print("out decimal :", val_out)
+    print("out binary  :", bin(val_out))
+
+ test led 0:
+ test(0b11, "position 0")
+
+  test led 1:
+test((1<<8) | (1<<9), "secteur 1, pososition 8 donc bits 8-9 = 11")
+
+test led 2:
+test((1<<16) | (1<<17), "secteur 2, position 16 donc bits 16-17 = 11")
+
+led 3:
+test((1<<24) | (1<<25), "secteur 3, position 24 (bits 24-25 = 11)")

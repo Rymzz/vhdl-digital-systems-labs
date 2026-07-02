@@ -1,0 +1,14 @@
+from pynq import MMIO
+demo = MMIO(0x41200000, 0x10)
+demo.write(0x0, 100)
+
+#appuyer sur BTN1
+demo.read(0x8)
+
+#version des tests avec un tableau 
+valeurs = [0, 1, 4, 9, 10, 36, 144, 1000, 4096, 65025]
+for a in valeurs:
+    demo.write(0x0, a)
+    input(f"A = {a}") #appuie btn1
+    x = demo.read(0x8)
+    print(f"la racine de A = {a} est X = {x}")

@@ -1,0 +1,306 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Thu Feb 26 09:17:28 2026
+# Process ID         : 27228
+# Current directory  : C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.runs/synth_1
+# Command line       : vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file           : C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.runs/synth_1/top.vds
+# Journal file       : C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.runs/synth_1\vivado.jou
+# Running On         : wesh
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 7 258V
+# CPU Frequency      : 3302 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 8
+# Host memory        : 33796 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 35943 MB
+# Available Virtual  : 9464 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 529.047 ; gain = 222.699
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/2025.2/Vivado/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8916
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1330.621 ; gain = 541.871
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/top.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'feu' [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/feu.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'feu' (0#1) [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/feu.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'monopulseur' [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/monopulseur.vhd:27]
+	Parameter duree_debounce bound to: 2500000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'monopulseur' (0#1) [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/monopulseur.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'power_on_reset' [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/power_on_reset.vhd:26]
+	Parameter reset_time bound to: 100 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'power_on_reset' (0#1) [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/power_on_reset.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'zynq_wrapper' [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/hdl/zynq_wrapper.vhd:44]
+INFO: [Synth 8-3491] module 'zynq' declared at 'c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/synth/zynq.vhd:348' bound to instance 'zynq_i' of component 'zynq' [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/hdl/zynq_wrapper.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'zynq' [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/synth/zynq.vhd:381]
+INFO: [Synth 8-3491] module 'zynq_axi_gpio_0_0' declared at 'C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.runs/synth_1/.Xil/Vivado-27228-wesh/realtime/zynq_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'zynq_axi_gpio_0_0' [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/synth/zynq.vhd:584]
+INFO: [Synth 8-638] synthesizing module 'zynq_axi_gpio_0_0' [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.runs/synth_1/.Xil/Vivado-27228-wesh/realtime/zynq_axi_gpio_0_0_stub.vhdl:39]
+INFO: [Synth 8-3491] module 'zynq_proc_sys_reset_0_0' declared at 'C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.runs/synth_1/.Xil/Vivado-27228-wesh/realtime/zynq_proc_sys_reset_0_0_stub.vhdl:6' bound to instance 'proc_sys_reset_0' of component 'zynq_proc_sys_reset_0_0' [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/synth/zynq.vhd:608]
+INFO: [Synth 8-638] synthesizing module 'zynq_proc_sys_reset_0_0' [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.runs/synth_1/.Xil/Vivado-27228-wesh/realtime/zynq_proc_sys_reset_0_0_stub.vhdl:28]
+INFO: [Synth 8-3491] module 'zynq_processing_system7_0_0' declared at 'C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.runs/synth_1/.Xil/Vivado-27228-wesh/realtime/zynq_processing_system7_0_0_stub.vhdl:6' bound to instance 'processing_system7_0' of component 'zynq_processing_system7_0_0' [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/synth/zynq.vhd:621]
+INFO: [Synth 8-638] synthesizing module 'zynq_processing_system7_0_0' [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.runs/synth_1/.Xil/Vivado-27228-wesh/realtime/zynq_processing_system7_0_0_stub.vhdl:83]
+INFO: [Synth 8-638] synthesizing module 'zynq_ps7_0_axi_periph_0' [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/synth/zynq.vhd:279]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_15A5WQ8' [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/synth/zynq.vhd:79]
+INFO: [Synth 8-3491] module 'zynq_ps7_0_axi_periph_imp_auto_pc_0' declared at 'C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.runs/synth_1/.Xil/Vivado-27228-wesh/realtime/zynq_ps7_0_axi_periph_imp_auto_pc_0_stub.vhdl:6' bound to instance 'auto_pc' of component 'zynq_ps7_0_axi_periph_imp_auto_pc_0' [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/synth/zynq.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'zynq_ps7_0_axi_periph_imp_auto_pc_0' [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.runs/synth_1/.Xil/Vivado-27228-wesh/realtime/zynq_ps7_0_axi_periph_imp_auto_pc_0_stub.vhdl:77]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_15A5WQ8' (0#1) [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/synth/zynq.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'zynq_ps7_0_axi_periph_0' (0#1) [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/synth/zynq.vhd:279]
+INFO: [Synth 8-256] done synthesizing module 'zynq' (0#1) [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/synth/zynq.vhd:381]
+INFO: [Synth 8-256] done synthesizing module 'zynq_wrapper' (0#1) [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/hdl/zynq_wrapper.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'top' (0#1) [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/src/top.vhd:29]
+WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_15A5WQ8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_15A5WQ8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module zynq_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module zynq_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_btns[3] in module feu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_btns[2] in module feu is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_sw_top in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1457.914 ; gain = 669.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1457.914 ; gain = 669.164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1457.914 ; gain = 669.164
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1457.914 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/ip/zynq_axi_gpio_0_0/zynq_axi_gpio_0_0/zynq_axi_gpio_0_0_in_context.xdc] for cell 'zynq/zynq_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/ip/zynq_axi_gpio_0_0/zynq_axi_gpio_0_0/zynq_axi_gpio_0_0_in_context.xdc] for cell 'zynq/zynq_i/axi_gpio_0'
+Parsing XDC File [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/ip/zynq_proc_sys_reset_0_0/zynq_proc_sys_reset_0_0/zynq_proc_sys_reset_0_0_in_context.xdc] for cell 'zynq/zynq_i/proc_sys_reset_0'
+Finished Parsing XDC File [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/ip/zynq_proc_sys_reset_0_0/zynq_proc_sys_reset_0_0/zynq_proc_sys_reset_0_0_in_context.xdc] for cell 'zynq/zynq_i/proc_sys_reset_0'
+Parsing XDC File [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/ip/zynq_processing_system7_0_0/zynq_processing_system7_0_0/zynq_processing_system7_0_0_in_context.xdc] for cell 'zynq/zynq_i/processing_system7_0'
+Finished Parsing XDC File [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/ip/zynq_processing_system7_0_0/zynq_processing_system7_0_0/zynq_processing_system7_0_0_in_context.xdc] for cell 'zynq/zynq_i/processing_system7_0'
+Parsing XDC File [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/ip/zynq_ps7_0_axi_periph_imp_auto_pc_0/zynq_ps7_0_axi_periph_imp_auto_pc_0/zynq_ps7_0_axi_periph_imp_auto_pc_0_in_context.xdc] for cell 'zynq/zynq_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Finished Parsing XDC File [c:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.gen/sources_1/bd/zynq/ip/zynq_ps7_0_axi_periph_imp_auto_pc_0/zynq_ps7_0_axi_periph_imp_auto_pc_0/zynq_ps7_0_axi_periph_imp_auto_pc_0_in_context.xdc] for cell 'zynq/zynq_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/xdc/PYNQ-Z2-v1.0.xdc]
+Finished Parsing XDC File [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/xdc/PYNQ-Z2-v1.0.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/xdc/PYNQ-Z2-v1.0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1530.148 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1530.148 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1530.148 ; gain = 741.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1530.148 ; gain = 741.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1530.148 ; gain = 741.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1530.148 ; gain = 741.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   28 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 21    
++---Muxes : 
+	   6 Input   28 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 4     
+	   8 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port ACLK in module zynq_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESETN in module zynq_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ACLK in module zynq_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port M00_ARESETN in module zynq_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port I_sw_top in module top is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1530.148 ; gain = 741.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1653.578 ; gain = 864.828
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1689.273 ; gain = 900.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1689.273 ; gain = 900.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1917.043 ; gain = 1128.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1917.043 ; gain = 1128.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1917.043 ; gain = 1128.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1917.043 ; gain = 1128.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1917.043 ; gain = 1128.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1917.043 ; gain = 1128.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+------------------------------------+----------+
+|      |BlackBox name                       |Instances |
++------+------------------------------------+----------+
+|1     |zynq_ps7_0_axi_periph_imp_auto_pc_0 |         1|
+|2     |zynq_axi_gpio_0_0                   |         1|
+|3     |zynq_proc_sys_reset_0_0             |         1|
+|4     |zynq_processing_system7_0_0         |         1|
++------+------------------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------------------+------+
+|      |Cell                                     |Count |
++------+-----------------------------------------+------+
+|1     |zynq_axi_gpio_0_0_bbox                   |     1|
+|2     |zynq_proc_sys_reset_0_0_bbox             |     1|
+|3     |zynq_processing_system7_0_0_bbox         |     1|
+|4     |zynq_ps7_0_axi_periph_imp_auto_pc_0_bbox |     1|
+|5     |CARRY4                                   |    49|
+|6     |LUT1                                     |    70|
+|7     |LUT2                                     |   130|
+|8     |LUT3                                     |    54|
+|9     |LUT4                                     |    39|
+|10    |LUT5                                     |     5|
+|11    |LUT6                                     |    10|
+|12    |FDCE                                     |    83|
+|13    |FDRE                                     |    44|
+|14    |IBUF                                     |     2|
+|15    |OBUF                                     |     6|
++------+-----------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1917.043 ; gain = 1128.293
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:29 . Memory (MB): peak = 1917.043 ; gain = 1056.059
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1917.043 ; gain = 1128.293
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1926.180 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1929.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 3f70b5bc
+INFO: [Common 17-83] Releasing license: Synthesis
+49 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:39 . Memory (MB): peak = 1929.875 ; gain = 1374.555
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1929.875 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/zidir/Desktop/lemside/3500/labo2-2429561-2433385/project_2/project_2.runs/synth_1/top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 26 09:18:19 2026...
